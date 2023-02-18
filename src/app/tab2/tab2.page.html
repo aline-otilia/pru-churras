@@ -1,46 +1,53 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+  <ion-toolbar color="dark">
+    <ion-row>
+      <ion-col
+        ><ion-button color="danger" expand="block">1</ion-button></ion-col
+      >
+      <ion-col
+        ><ion-button color="danger" expand="block">3</ion-button></ion-col
+      >
+      <ion-col
+        ><ion-button color="danger" expand="block">9</ion-button></ion-col
+      >
+      <ion-col
+        ><ion-button color="danger" expand="block">12</ion-button></ion-col
+      >
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div>
-    <ion-grid>
-      <ion-row>
-        <ion-col><ion-button shape="round">3</ion-button></ion-col>
-        <ion-col><ion-button shape="round">9</ion-button></ion-col>
-        <ion-col><ion-button shape="round">12</ion-button></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col><ion-button shape="round">+</ion-button></ion-col>
-        <ion-col></ion-col>
-        <ion-col><ion-button shape="round">+</ion-button></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col><ion-button shape="round">7</ion-button></ion-col>
-        <ion-col></ion-col>
-        <ion-col><ion-button shape="round">5</ion-button></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col><ion-button shape="round">-</ion-button></ion-col>
-        <ion-col></ion-col>
-        <ion-col><ion-button shape="round">-</ion-button></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col><ion-button shape="round">TIME 1</ion-button></ion-col>
-        <ion-col></ion-col>
-        <ion-col><ion-button shape="round">TIME 2</ion-button></ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col><ion-button expand="block">RESET</ion-button></ion-col>
-      </ion-row>
+<div>
+  <ion-grid>
+    <ion-row>
+      <ion-col><ion-button shape="round">+</ion-button></ion-col>
+      <ion-col></ion-col>
+      <ion-col><ion-button shape="round">+</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
 
+<ion-row>
+  <ion-col><ion-label>7</ion-label></ion-col>
+  <ion-col></ion-col>
+  <ion-col><ion-label>5</ion-label></ion-col>
+</ion-row>
 
-    </ion-grid>
+<ion-row>
+  <ion-col><ion-button shape="round">-</ion-button></ion-col>
+  <ion-col></ion-col>
+  <ion-col><ion-button shape="round">-</ion-button></ion-col>
+</ion-row>
 
+<ion-row>
+  <ion-col><ion-label> MARRECO </ion-label></ion-col>
+  <ion-col><ion-label> POMBO</ion-label></ion-col>
+</ion-row>
 
-  </div>
-</ion-content>
+<ion-footer>
+  <ion-toolbar color="dark">
+    <ion-button class="ion-text-center" expand="block" color="danger">
+      RESET
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
