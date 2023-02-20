@@ -1,53 +1,49 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="dark">
+  <ion-toolbar color="tertiary">
     <ion-row>
-      <ion-col
-        ><ion-button color="danger" expand="block">1</ion-button></ion-col
-      >
-      <ion-col
-        ><ion-button color="danger" expand="block">3</ion-button></ion-col
-      >
-      <ion-col
-        ><ion-button color="danger" expand="block">9</ion-button></ion-col
-      >
-      <ion-col
-        ><ion-button color="danger" expand="block">12</ion-button></ion-col
-      >
+      <ion-col><ion-fab-button color="light">1</ion-fab-button></ion-col>
+      <ion-col><ion-fab-button color="light">3</ion-fab-button></ion-col>
+      <ion-col><ion-fab-button color="light">6</ion-fab-button></ion-col>
+      <ion-col><ion-fab-button color="light">12</ion-fab-button></ion-col>
     </ion-row>
   </ion-toolbar>
 </ion-header>
 
-<div>
-  <ion-grid>
-    <ion-row>
-      <ion-col><ion-button shape="round">+</ion-button></ion-col>
-      <ion-col></ion-col>
-      <ion-col><ion-button shape="round">+</ion-button></ion-col>
-    </ion-row>
-  </ion-grid>
-</div>
+<ion-content [fullscreen]="true">
+  <div class="container-coin imagem">
+    <ion-grid class="">
+      <ion-row>
+        <ion-col><ion-fab-button><ion-icon name="add"></ion-icon></ion-fab-button></ion-col>
+        <ion-col><ion-fab-button><ion-icon name="add"></ion-icon></ion-fab-button></ion-col>
+      </ion-row>
+    </ion-grid>
 
-<ion-row>
-  <ion-col><ion-label>7</ion-label></ion-col>
-  <ion-col></ion-col>
-  <ion-col><ion-label>5</ion-label></ion-col>
-</ion-row>
+    <ion-grid>
+      <ion-row>
+        <ion-col><h1>7</h1></ion-col>
+        <ion-col><h1>5</h1></ion-col>
+      </ion-row>
+    </ion-grid>
 
-<ion-row>
-  <ion-col><ion-button shape="round">-</ion-button></ion-col>
-  <ion-col></ion-col>
-  <ion-col><ion-button shape="round">-</ion-button></ion-col>
-</ion-row>
+    <ion-grid>
+      <ion-row>
+        <ion-col><ion-fab-button color="danger"><ion-icon name="remove"></ion-icon></ion-fab-button></ion-col>
+        <ion-col><ion-fab-button color="danger"><ion-icon name="remove"></ion-icon></ion-fab-button></ion-col>
+      </ion-row>
+    </ion-grid>
 
-<ion-row>
-  <ion-col><ion-label> MARRECO </ion-label></ion-col>
-  <ion-col><ion-label> POMBO</ion-label></ion-col>
-</ion-row>
+    <ion-grid>
+      <ion-row>
+        <ion-col><h1>NÓS</h1></ion-col>
+        <ion-col><h1>ELES</h1></ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>
 
 <ion-footer>
-  <ion-toolbar color="dark">
-    <ion-button class="ion-text-center" expand="block" color="danger">
-      RESET
-    </ion-button>
+  <ion-toolbar color="tertiary">
+    <h1 class="ion-text-center">RESET</h1>
   </ion-toolbar>
 </ion-footer>
