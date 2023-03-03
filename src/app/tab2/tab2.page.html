@@ -9,35 +9,39 @@
 
   <div class="container-coin ">
     <ion-grid >
+      <ion-row>
+        <h1>Valendo: {{valendo}}</h1>
+      </ion-row>
       <ion-row class="top-menu">
-        <ion-col><ion-fab-button color="light">1</ion-fab-button></ion-col>
-        <ion-col><ion-fab-button color="light">3</ion-fab-button></ion-col>
-        <ion-col><ion-fab-button color="light">6</ion-fab-button></ion-col>
-        <ion-col><ion-fab-button color="light">12</ion-fab-button></ion-col>
+        <ion-col><ion-fab-button (click)="mudarValendo(1)" color="light">1</ion-fab-button></ion-col>
+        <ion-col><ion-fab-button (click)="mudarValendo(3)" color="light">3</ion-fab-button></ion-col>
+        <ion-col><ion-fab-button (click)="mudarValendo(6)" color="light">6</ion-fab-button></ion-col>
+        <ion-col><ion-fab-button (click)="mudarValendo(9)" color="light">9</ion-fab-button></ion-col>
+        <ion-col><ion-fab-button (click)="mudarValendo(12)" color="light">12</ion-fab-button></ion-col>
       </ion-row>
       <ion-row >
-        <ion-col size="6" class="column"><ion-fab-button><ion-icon name="add"></ion-icon></ion-fab-button></ion-col>
-        <ion-col size="6" ><ion-fab-button><ion-icon name="add"></ion-icon></ion-fab-button></ion-col>
+        <ion-col size="6" ><ion-fab-button (click)="adicionarTento(1)"><ion-icon name="add"></ion-icon></ion-fab-button></ion-col>
+        <ion-col size="6" ><ion-fab-button (click)="adicionarTento(2)"><ion-icon name="add"></ion-icon></ion-fab-button></ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="6"><ion-label>7</ion-label></ion-col>
-        <ion-col size="6"><ion-label>5</ion-label></ion-col>
+        <ion-col size="6"><ion-label>{{tentosTime1}}</ion-label></ion-col>
+        <ion-col size="6"><ion-label>{{tentosTime2}}</ion-label></ion-col>
       </ion-row>
       <ion-row>
-        <ion-col size="6"><ion-fab-button color="danger"><ion-icon name="remove"></ion-icon></ion-fab-button></ion-col>
-        <ion-col size="6"><ion-fab-button color="danger"><ion-icon name="remove"></ion-icon></ion-fab-button></ion-col>
+        <ion-col size="6"><ion-fab-button (click)="removerTento(1)" color="danger"><ion-icon name="remove"></ion-icon></ion-fab-button></ion-col>
+        <ion-col size="6"><ion-fab-button (click)="removerTento(2)" color="danger"><ion-icon name="remove"></ion-icon></ion-fab-button></ion-col>
       </ion-row>
       <ion-row >
         <ion-col size="6">
           <ion-card>
-            <h1>Nós</h1>
-            <h1>0</h1>
+            <h1>Time 1</h1>
+            <h1>{{pontosTime1}}</h1>
           </ion-card>
         </ion-col>
         <ion-col size="6">
           <ion-card>
-            <h1>Eles</h1>
-            <h1>0</h1>
+            <h1>Time 2</h1>
+            <h1>{{pontosTime2}}</h1>
           </ion-card>
         </ion-col>
       </ion-row>
@@ -47,7 +51,7 @@
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar color="light">
+  <ion-toolbar color="light" (click)="limpar()">
     <h1 class="ion-text-center">RESET</h1>
   </ion-toolbar>
 </ion-footer>
