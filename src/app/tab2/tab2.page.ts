@@ -13,6 +13,14 @@ export class Tab2Page {
   pontosTime1 = 0;
   pontosTime2 = 0;
 
+  mudarBotao(numero:number){
+    if(this.valendo === numero)
+    {
+      return 'outline';
+    }
+
+    return 'solid';
+  }
 
   mudarValendo(valor : number){
     this.valendo = valor;

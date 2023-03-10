@@ -1,3 +1,4 @@
+*{border: 0;}
 .container-coin
 {
   position: relative;
@@ -16,7 +17,7 @@
   background-size: cover;
   top: 0;
   left: 0;
-  filter: opacity(80%);
+  filter: opacity(50%);
 }
 ion-label{
   font-weight: bold;
@@ -30,7 +31,7 @@ ion-col{
 }
 
 .top-menu{
-  background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+  background-color: rgba($color: #FFFFFF, $alpha: 0.7);
   margin-bottom: 2rem;
   padding: 1rem;
 }
@@ -38,9 +39,24 @@ ion-col{
 ion-grid{
   margin: 0;
   padding:0;
+  gap: 0;
 }
 
 ion-card{
   padding: 1rem;
 }
 
+.valendo{
+  display: block;
+  text-align: center;
+  background-color: rgba($color: #FFFFFF, $alpha: 0.9);
+  padding: 1rem;
+
+}
+
+.valendo>h1{
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  color: #8b8b8b;
+}
